@@ -34,6 +34,7 @@ const LogoRationale: React.FC = () => {
                             <img 
                                 src={IMAGES.OFFICIAL_LOGO} 
                                 alt="Official Logo" 
+                                referrerPolicy="no-referrer"
                                 className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                             />
                         </div>
@@ -42,6 +43,7 @@ const LogoRationale: React.FC = () => {
                             <img 
                                 src={IMAGES.LOGO_RATIONALE} 
                                 alt="Logo #HPTN2026" 
+                                referrerPolicy="no-referrer"
                                 className="relative z-10 w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
                             />
                         </div>

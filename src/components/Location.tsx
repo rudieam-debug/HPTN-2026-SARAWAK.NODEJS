@@ -222,6 +222,7 @@ const Location: React.FC = () => {
                              <img 
                                 src={VENUE_IMAGES.MAP_TO_BCCK} 
                                 alt="Peta Lokasi BCCK" 
+                                referrerPolicy="no-referrer"
                                 className="w-full h-full object-contain bg-white" 
                             />
                         </div>

@@ -13,11 +13,13 @@ const Footer: React.FC = () => {
                   alt="Official Logo" 
                   className="h-10 w-auto" 
                   src={IMAGES.OFFICIAL_LOGO} 
+                  referrerPolicy="no-referrer"
                 />
                 <img 
                   alt="HPTN 2026 Logo" 
                   className="h-10 w-auto" 
                   src={IMAGES.NAV_LOGO} 
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <h2 className="font-bold text-xl tracking-tight text-white">#HPTN2026</h2>

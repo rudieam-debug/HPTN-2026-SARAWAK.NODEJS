@@ -76,6 +76,7 @@ const PartnerBox: React.FC<{
             <img 
               src={logoUrl} 
               alt={name} 
+              referrerPolicy="no-referrer"
               className="max-h-[85%] max-w-[90%] object-contain" 
             />
         </div>

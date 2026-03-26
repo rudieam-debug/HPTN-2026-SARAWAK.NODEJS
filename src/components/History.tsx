@@ -102,6 +102,7 @@ const History: React.FC = () => {
            <img 
              src="https://ik.imagekit.io/z7yhsbzej/HPTN%20History.png" 
              alt="Infografik Sejarah HPTN" 
+             referrerPolicy="no-referrer"
              className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
            />
            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>

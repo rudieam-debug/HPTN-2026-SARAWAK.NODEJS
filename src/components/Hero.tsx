@@ -184,6 +184,7 @@ const Hero: React.FC = () => {
                 <img 
                  src={IMAGES.ROBOT_HERO} 
                  alt="HPTN Robot" 
+                 referrerPolicy="no-referrer"
                  className="h-[110vh] lg:h-[150vh] w-auto object-contain drop-shadow-[0_0_30px_rgba(0,0,0,0.5)] transition-all duration-500 ease-out group-hover/robot:scale-105 group-hover/robot:drop-shadow-[0_0_80px_rgba(244,192,37,0.6)] group-hover/robot:brightness-110 cursor-pointer relative z-10" 
                />
                
@@ -235,6 +236,7 @@ const Hero: React.FC = () => {
                 alt="Jata Sarawak Emblem" 
                 className="relative z-10 h-32 md:h-40 w-auto object-contain drop-shadow-[0_0_15px_rgba(244,192,37,0.3)] animate-subtle-pulse cursor-pointer" 
                 src={IMAGES.JATA_SARAWAK} 
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -252,6 +254,7 @@ const Hero: React.FC = () => {
               <img 
                 src={IMAGES.OFFICIAL_LOGO} 
                 alt="Official Logo" 
+                referrerPolicy="no-referrer"
                 className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
               />
             </div>
@@ -261,6 +264,7 @@ const Hero: React.FC = () => {
               <img 
                 src={IMAGES.HERO_LOGO} 
                 alt="#HPTN2026 Logo" 
+                referrerPolicy="no-referrer"
                 className="relative z-10 w-full h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-300" 
               />
               {/* Shine overlay */}
