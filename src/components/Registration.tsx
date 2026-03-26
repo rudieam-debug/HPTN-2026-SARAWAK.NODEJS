@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { getSupabase, handleSupabaseError } from '../supabase';
 
 const Registration: React.FC = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [registrationType, setRegistrationType] = useState('peserta');
+  const [error, setError] = useState<string | null>(null);
   
   // Form State
   const [formData, setFormData] = useState({
@@ -82,8 +84,9 @@ const Registration: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError(null);
     
     // Validate all fields on submit
     const isNameValid = validateName(formData.name);
@@ -102,13 +105,32 @@ const Registration: React.FC = () => {
 
     if (isNameValid && isEmailValid && isPhoneValid && formData.organization) {
       setIsLoading(true);
-      // Simulate API call
-      setTimeout(() => {
-        setIsLoading(false);
+      try {
+        const supabase = getSupabase();
+        const { error: supabaseError } = await supabase
+          .from('registrations')
+          .insert([
+            {
+              ...formData,
+              registration_type: registrationType,
+              created_at: new Date().toISOString()
+            }
+          ]);
+
+        if (supabaseError) {
+          handleSupabaseError(supabaseError);
+        }
+        
         setIsSubmitted(true);
-      }, 1500);
+      } catch (err: any) {
+        console.error("Registration error:", err);
+        setError(err.message || "Maaf, pendaftaran gagal. Sila cuba lagi.");
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
+
 
   const handleReset = () => {
     setIsSubmitted(false);
@@ -116,7 +138,10 @@ const Registration: React.FC = () => {
     setFormData({ name: '', email: '', organization: '', phone: '' });
     setErrors({ name: '', email: '', phone: '' });
     setTouched({ name: false, email: false, phone: false });
+    setError(null);
   };
+
+
 
   return (
     <section className="py-24 px-6 bg-white dark:bg-background-card transition-colors relative" id="pendaftaran">
@@ -365,6 +390,13 @@ const Registration: React.FC = () => {
                         placeholder="Nama organisasi anda"
                     />
                     </div>
+
+                    {error && (
+                      <div className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-red-500 text-sm flex items-center gap-2 animate-fade-in-up">
+                        <span className="material-symbols-outlined text-base">error</span>
+                        {error}
+                      </div>
+                    )}
 
                     <button 
                     type="submit" 

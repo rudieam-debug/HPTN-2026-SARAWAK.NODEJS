@@ -14,6 +14,7 @@ import FAQ from './components/FAQ';
 import BottomBanner from './components/BottomBanner';
 import Footer from './components/Footer';
 import Divider from './components/Divider';
+import ErrorBoundary from './components/ErrorBoundary';
 
 const BackToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -84,36 +85,39 @@ const BackToTop: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300 selection:bg-primary/30">
-      <Navbar />
-      <main>
-        <Hero />
-        <Divider />
-        <About />
-        <Divider />
-        <Stats />
-        <Divider />
-        <LogoRationale />
-        <Divider />
-        <History />
-        <Divider />
-        <Fields />
-        <Divider />
-        <Program />
-        <Divider />
-        <Registration />
-        <Divider />
-        <Location />
-        <Divider />
-        <Partners />
-        <Divider />
-        <FAQ />
-        <BottomBanner />
-      </main>
-      <Footer />
-      <BackToTop />
-    </div>
+    <ErrorBoundary>
+      <div className="flex flex-col min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300 selection:bg-primary/30">
+        <Navbar />
+        <main>
+          <Hero />
+          <Divider />
+          <About />
+          <Divider />
+          <Stats />
+          <Divider />
+          <LogoRationale />
+          <Divider />
+          <History />
+          <Divider />
+          <Fields />
+          <Divider />
+          <Program />
+          <Divider />
+          <Registration />
+          <Divider />
+          <Location />
+          <Divider />
+          <Partners />
+          <Divider />
+          <FAQ />
+          <BottomBanner />
+        </main>
+        <Footer />
+        <BackToTop />
+      </div>
+    </ErrorBoundary>
   );
 };
+
 
 export default App;
