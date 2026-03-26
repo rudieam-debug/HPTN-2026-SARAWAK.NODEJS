@@ -7,18 +7,20 @@ const Footer: React.FC = () => {
       <div className="max-w-[1200px] mx-auto w-full">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center gap-3 text-white mb-6">
-              <img 
-                alt="Official Logo" 
-                className="h-10 w-auto" 
-                src={IMAGES.OFFICIAL_LOGO} 
-              />
-              <img 
-                alt="HPTN 2026 Logo" 
-                className="h-10 w-auto" 
-                src={IMAGES.NAV_LOGO} 
-              />
-              <h2 className="font-bold text-lg tracking-tight hidden sm:block">#HPTN2026</h2>
+            <div className="mb-6">
+              <div className="flex items-center gap-3 text-white mb-3">
+                <img 
+                  alt="Official Logo" 
+                  className="h-10 w-auto" 
+                  src={IMAGES.OFFICIAL_LOGO} 
+                />
+                <img 
+                  alt="HPTN 2026 Logo" 
+                  className="h-10 w-auto" 
+                  src={IMAGES.NAV_LOGO} 
+                />
+              </div>
+              <h2 className="font-bold text-xl tracking-tight text-white">#HPTN2026</h2>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               Hari Profesion Teknikal Negara 2026 Sarawak adalah inisiatif untuk memartabatkan profesion teknikal dalam pembangunan negara.

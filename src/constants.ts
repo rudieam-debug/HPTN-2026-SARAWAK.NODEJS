@@ -13,7 +13,7 @@ export const IMAGES = {
   BUSINESS_NET: "https://lh3.googleusercontent.com/aida-public/AB6AXuBBam_wz0OJag2MknkoRNRVI0SoN1jRWdRzvvB20akJT89MbH7_Bswv5z_BL26xZfOkBdx4LCgtaG3PB1GIQ_Z7kVlcKS858us5VC60OJnJo66TbX-vbI9zEXM2eBVRfu43MXr8ALzdt16RKFMU2_6WPc_hP_aWIg5YpMR2N0zEiChdx395Az75R8032xJ_N3esJXs1FZtKGFXHRcsR7SWZ8aXJrKK6Yw9sZGatYntlBN2wEK-NFIq-QO7niwIdQmN8Yq3Rbkh6I_U",
   MAP: "https://lh3.googleusercontent.com/aida-public/AB6AXuD8ahBt8InXag4ewhpm2oYW0N8qltSRdX1X3t40D8bXTUY7Gw8-0f1fqYvb2rxypGI04rXajwpiPvFbv4CnAceB2GLE_kvKcRiWF99Zk2hZdymfo5UnTb_GaYz2gHo7wULw9L8PXrnqWYmDFrQD6ieI5UXh6FUBHAXDD_85QOuZX2uAbBaGjo9UMbXM7UHBDTCFFBYoIVigVo15iQORPVCHNPclFSkhrOcnIaqoDzDe4FSo3jLiBQgtlzLMePW-4TP1t-zxRn4DcIA",
   JATA_NEGARA_FOOTER: "https://lh3.googleusercontent.com/aida-public/AB6AXuCL9vwvc31Q4V3Zm_v_gVEuyApo4xxmPUEyU5zsW7jt9X2JPGcAdjoxwh-YkvgVyC4wPQCoasCSgj0j1EYbi0DPpaz0463kn-DKZe2e1gl7UBKkPjNwvYSR_dqlMt2KHEBWMpLgx73XLaC9v3dm95jQb6JwLBgY_HjBH7VGKnEo4D0VZjwA-z9nr9ljKI44eW2mdGrKgHS6ytf5fufnhlOE3SsfLzQ_tfjQZgWQS9CudfIPaeQtRQFmnPvU8CgAvXGtFjp11exaKPw",
-  BOTTOM_BANNER: "https://ik.imagekit.io/z7yhsbzej/HPTN%202026%20SARAWAK%20Main%20Bottom%20Banner.png",
+  BOTTOM_BANNER: "https://ik.imagekit.io/z7yhsbzej/HPTN%202026%20SARAWAK%20Main%20Bottom%20Banner%20(1).png?updatedAt=1774547593982",
   ROBOT_HERO: "https://ik.imagekit.io/z7yhsbzej/Gemini_Generated_Image_gnfatngnfatngnfa(1).png",
   NAV_LOGO: "https://ik.imagekit.io/z7yhsbzej/hptn%202026%20logo%20new.png?updatedAt=1765648577716",
   LOGO_RATIONALE: "https://ik.imagekit.io/z7yhsbzej/hptn%202026%20logo%20new.png?updatedAt=1765648577716"
@@ -22,8 +22,8 @@ export const IMAGES = {
 export const VENUE_IMAGES = {
   BCCK_EXTERIOR: "https://ik.imagekit.io/z7yhsbzej/473149743_1061474509358130_1019719439170044052_n.jpg",
   INTERIOR_HALL: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2098&auto=format&fit=crop",
-  CULTURAL_VILLAGE: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx8aCON1J7R6Dcuzz53rT4vMlbNSjKIA74yZ0HD9qo4PEwoQU5VZrkvf2gIvvDtlzsHK77K9N8HULzjXy0TyPOEOlp49qXRk7OUW8VPBaiWD8aFFHh1BzCcQ-9mp2O4TqBg4Bk=s1360-w1360-h1020-rw", 
-  SEMENGGOH: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx0zXcSCwKlfsE2Tb9uEDVFn_-v3etSuz-ZDe119oWCYAiVVzp_i1oWoURwnqbdluLy8-rkqWWVOMfUNTt7VXsCOHHirxw0vHDxFpLX8SD-a1XqlkOIOtbHnkqPciZCrHeMfMYU9iBWnVc=s1360-w1360-h1020-rw",
+  CULTURAL_VILLAGE: "https://ik.imagekit.io/z7yhsbzej/sarawak-cultural-village%20(1).webp", 
+  SEMENGGOH: "https://ik.imagekit.io/z7yhsbzej/unnamed%20(2).webp",
   DARUL_HANA: "https://www.sarawaktourism.com/web/attachment/show/?docid=MU9acmROa1lWUThTMXBxRUpmSUUvQT09OjritlIKAIzbSpzpImrTQ687",
   LAKSA: "https://snapsea.fra1.cdn.digitaloceanspaces.com/4820242f-44bc-4062-972c-4461fb467aba/ig/shirley_yuyang_li-17944374458447688-0.jpg",
   KOLO_MEE: "https://www.sarawaktourism.com/web/attachment/show/?docid=anBFRGZCdVRDTlZYYk5kSjVLcm5KZz09Ojr-nD2tZCMvZ6eiixW6tQFe",

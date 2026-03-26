@@ -75,7 +75,7 @@ const Navbar: React.FC = () => {
            <a href="#" className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2 group shrink-0">
              <img src={IMAGES.OFFICIAL_LOGO} alt="Official Logo" className="h-8 w-auto max-w-[140px] xl:max-w-[180px] object-contain group-hover:scale-110 transition-transform duration-300" />
              <img src={IMAGES.NAV_LOGO} alt="HPTN Logo" className="h-8 w-auto max-w-[140px] xl:max-w-[180px] object-contain group-hover:scale-110 transition-transform duration-300" />
-             <span className="hidden xl:inline">#HPTN2026</span>
+             <span className="text-lg xl:text-xl">#HPTN2026</span>
            </a>
         </div>
 
@@ -119,6 +119,7 @@ const Navbar: React.FC = () => {
           <a href="#" className="flex items-center gap-1.5 sm:gap-2 min-w-0 shrink">
              <img src={IMAGES.OFFICIAL_LOGO} alt="Official Logo" className="h-6 sm:h-8 w-auto max-w-[35vw] sm:max-w-[200px] object-contain shrink" />
              <img src={IMAGES.NAV_LOGO} alt="HPTN Logo" className="h-6 sm:h-8 w-auto max-w-[35vw] sm:max-w-[200px] object-contain shrink" />
+             <span className="text-sm sm:text-base font-bold text-gray-900 dark:text-white shrink-0">#HPTN2026</span>
           </a>
           <div className="flex items-center gap-1 shrink-0">
             <button
